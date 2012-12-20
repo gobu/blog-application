@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog6</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+    <h1 align="left">Gobu.R.G</h1>
+  </div>
+<hr color=red>
+  <div id="menu">
+	 <a href="/tables/aboutme">About</a> 
+	|
+	 <a href="/tables/setting">Blog</a> 
+	|
+	 <a href="/tables/create">New comment</a> 
+  </div>
+<hr color=grea>
+  <div id="container">
+	
+   <%= yield %> 
+
+  </div>
+<hr color=red>
+  <div id="footer">
+	<h5 align="left">email :rggobu@gmail.com</h5><h5 align="left">cellno : 9916516282</h5>	
+  </div>
+</body>
+</html>

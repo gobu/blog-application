@@ -1,0 +1,18 @@
+<html>
+<a href="/tables" align="left">Homepage</a>
+<body>
+<div>Blog Details</div>
+<ul>
+<%- @tables.each do |record|%>
+    <li> NAME   :<label><%=record.name%></label> </li>
+    <li> content:<textarea><%=record.content%></textarea> </li>
+    <li> cellno :<label><%=record.cellno%></label></li>
+    <a href="/tables/<%= record.id %>/edit">Edit</a>
+	|
+    <a href="/tables/<%= record.id%>/delete">Delete</a>
+<hr color="red">
+<%end%>
+</ul>
+</body>
+</html>
+
