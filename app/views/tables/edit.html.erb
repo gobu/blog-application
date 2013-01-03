@@ -1,12 +1,10 @@
-<html>
-<body>
-<form action="/tables/update" method="post">
-        ID:<input type="text" name="id" value="<%= @tables.id %>"></br>
-        NAME:<input type="text" name="name" value="<%= @tables.name %>"></br>
-        CELLNO:<input type="text" name="cellno" value="<%= @tables.cellno %>"></br>
-        CONTENT:<input type="text" name="content" value="<%= @tables.content %>">
-        <input type="submit">
+<form class="edit" action="/tables/update" method="post">
+<table class="editable">
+<tr><td>ID</td><td><input type="text" name="id" value="<%= @tables.id %>"></td></tr>
+<tr><td>NAME</td><td><input type="text" name="name" value="<%= @tables.name %>"></td></tr>
+<tr><td>CELLNO</td><td><input type="number" name="cellno" value="<%= @tables.cellno %>"></td></tr>
+<tr><td>CONTENT</td><td><input type="text" name="content" value="<%= @tables.content %>"></td></tr>
+<tr><td></td><td><input type="submit"></td></tr>
+</table>
 </form>
-</body>
-</html>
 

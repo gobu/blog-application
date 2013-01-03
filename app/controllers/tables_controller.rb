@@ -42,4 +42,23 @@ class TablesController < ApplicationController
 	def setting
 		@tables=Table.all		
 	end
+
+	def view
+		@table = Table.find(params[:id])
+	end
+
+	def updatelike
+		@liketable = Like.create
+		@liketable.name=params[:name]
+                @liketable.comment=params[:comment]
+		@liketable.table_id=params[:table_id]
+                puts @liketable.save
+                redirect_to "/tables/setting"
+	end
+
+	def likes
+		@table = Table.find(params[:id])
+		@liketable = @table.likes
+	end
+
 end

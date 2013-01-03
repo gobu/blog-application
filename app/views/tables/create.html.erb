@@ -1,12 +1,9 @@
-<html>
-<body>
+<form class="create" action="/tables/insert" method="post">
 <p>ENTER YOUR DATA</P>
-<form action="/tables/insert" method="post">
-        NAME    :<input type="text" name="name"></br>
-        CELLNO  :<input type="number" name="cellno"></br>
-        CONTENT :<input type="text" name="content"></br>
-        <input type="submit">
+<table class="table">
+	<tr><td>NAME</td><td><input type="text" name="name"></td></tr>
+        <tr><td>CELLNO</td><td><input type="number" name="cellno"></td></tr>
+        <tr><td>CONTENT</td><td><input type="text" name="content"></td></tr>
+        <tr><td></td><td><input type="submit"></td></tr>
+</table>
 </form>
-</body>
-</html>
-

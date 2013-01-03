@@ -1,0 +1,10 @@
+<form class="view" action="/tables/:id/likes" method="get">
+<ul>
+<%- @liketable.each do |record|%>
+    <li> ID :<label><%=record.id%></label></li>
+    NAME   :<label><%=record.name%></label> 
+    COMMENT :<label><%=record.comment%></label></br>
+<%end%>
+</ul>
+</form>
+

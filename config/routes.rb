@@ -7,6 +7,9 @@ Blog6::Application.routes.draw do
 	post "/tables/update" => "tables#update"
 	get "/tables/:id/delete" => "tables#delete"
   	get "/tables/setting" => "tables#setting"
+	get "/tables/:id/view" => "tables#view"
+	get "/tables/:id/likes" => "tables#likes"
+	post "/tables/updatelike" => "tables#updatelike"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

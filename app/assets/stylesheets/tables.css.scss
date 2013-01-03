@@ -1,3 +1,64 @@
 // Place all the styles related to the tables controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.aboutme_form
+{
+	background:white;
+}
+#aboutme_p
+{
+	text-transform: uppercase;
+	text-align:center;
+}
+.layout_body
+{
+	background:#00FFFF;
+	border:2px solid red;
+}
+#header
+{
+	padding:8px;
+	background:green;
+	border:1px solid red;
+}
+#menu
+{
+	padding:10px;
+	text-align:right;
+	border:1px solid red;	
+}
+#container
+{
+	background:white;
+	padding:30px;
+	min-height:330px;
+	border:1px solid red;
+}
+#footer
+{
+	padding:10px;
+	border:1px solid red;
+}
+.edit
+{
+	background:white;
+}
+.create
+{
+	background:white;
+}
+.table
+{
+	padding:5px;
+	background:#00FFFF;
+}
+/*.editable
+{
+	padding:5px;
+        background:#00FFFF;
+
+}*/
+.homepage
+{
+	
+}
