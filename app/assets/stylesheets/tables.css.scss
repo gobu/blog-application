@@ -39,14 +39,6 @@
 	padding:10px;
 	border:1px solid red;
 }
-.edit
-{
-	background:white;
-}
-.create
-{
-	background:white;
-}
 .table
 {
 	padding:5px;
@@ -60,5 +52,22 @@
 }*/
 .homepage
 {
-	
+        background:white;
+       // height:450px;
 }
+
+.edit
+{
+        background:white;
+       // height:450px;
+}
+.create
+{
+        background:white;
+       // height:450px;
+}
+.create input
+{
+        margin-right:300px;
+}
+
